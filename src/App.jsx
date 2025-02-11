@@ -4,6 +4,7 @@ import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 import Header from "./Header";
 import HeroSection from './HeroSection'
+import LandingPage from "./LandingPage";
 import Portfolio from "./Portfolio";
 import SkillsSection from "./SkillsSection";
 import SocialMedia from "./SocialMedia";
@@ -11,6 +12,7 @@ const App = () => {
   return (
     <div>
       <Header />
+      {/* <LandingPage/> */}
       <HeroSection />
       <AboutSection/>
       <SkillsSection/>
@@ -19,6 +21,7 @@ const App = () => {
       <SocialMedia/>
       <ContactUs/>
       <Footer/>
+
     </div>
   );
 };

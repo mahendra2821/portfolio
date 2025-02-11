@@ -9,7 +9,7 @@ const HeroSection = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex items-center justify-center bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-500 text-white"
+      className="h-screen flex items-center justify-center bg-black text-white"
     >
       <motion.div
         className="flex flex-col md:flex-row items-center w-full max-w-7xl px-4 md:px-6"
@@ -28,7 +28,7 @@ const HeroSection = () => {
             I am <span className="text-yellow-300">Mahendra</span>
           </h1>
           <h2 className="text-xl md:text-3xl font-extrabold mb-4 font-serif">
-            <span className="text-yellow-400">A FullStack Developer and Machine DS/ML </span>
+            <span className="text-yellow-400">A FullStack Developer and Problem Solver </span>
           </h2>
 
           <p className="text-sm md:text-lg font-medium">

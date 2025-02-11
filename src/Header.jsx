@@ -12,13 +12,14 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-lg z-50 transition-all duration-500">
+    <header className="fixed top-0 left-0 w-full bg-gray-900 shadow-lg z-50 transition-all duration-500">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
+
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <h1 className="text-4xl font-extrabold">
             <span className="font-serif text-blue-500">Port</span>
-            <span className="font-sans text-gray-800">folio</span>
+            <span className="font-sans text-white">folio</span>
           </h1>
 
           {/* Navigation */}

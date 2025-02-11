@@ -73,7 +73,7 @@ const Footer = () => {
               <FaLinkedin />
             </motion.a>
             <motion.a
-              href="https://twitter.com/your-profile"
+              href="https://x.com/JammulaMahendr3"
               target="_blank"
               rel="noopener noreferrer"
               className="text-3xl hover:text-blue-400 transition duration-300"

@@ -68,8 +68,12 @@ const Portfolio = () => {
   };
 
   return (
+
  
-    <section id="projects" className="py-16 bg-gradient-to-r from-white-400 via-green-800 to-gray-900 relative">
+    <section id="projects" className="py-16 bg-black">
+      <h2 className="text-4xl font-bold text-center text-white mb-8">
+          Projects
+        </h2>
       <div className="container mx-auto relative flex flex-col items-center">
         <div className="absolute left-1/2 transform -translate-x-1/2 w-2 bg-blue-500 h-full"></div>
 
