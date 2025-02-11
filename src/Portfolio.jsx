@@ -49,7 +49,7 @@ const projects = [
     img: "https://media-hosting.imagekit.io//1751bf7ff4824938/Screenshot%202025-02-10%20215602.png?Expires=1833812853&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=0qOVyAtHWrNyK3galo7qXEqVc7R2gQMs7cX3reWvxXhfNJ~V2efCIWyhy-I44KK7Uva4eW3wqgM6cN6vWoCPIp4YkG741zbKNKKcUPUHLkZDlrEGdbkdev4p56pckz7w8i-vYuYvJOyFBvvzIRAlXBkcpd6gbiZo89AhjCV6nlxdn9O4eRHOk8OQ-Ilh~K6nyUIBoL6eqAk6jCjpmyRfLi1SA4jU0W8yxozB~AnCv830CPuqARJf10HgoGDDO5PvUoLymNVFpQ~K7DIQCMR6RcMmhL4HkcAKbODOA-9iai7PWwoFH8Z~vnZ9TdqJMGoby1vy~qauJsCHsKhlHkqNGw__",
     github: "",
     github_Frontend: "https://github.com/mahendra2821/Gydocare_01",
-    live_link : "https://dainty-syrniki-aed4af.netlify.app/doctors",  },
+    live_link : "https://dainty-syrniki-aed4af.netlify.app/",  },
 ];
 
 Modal.setAppElement("#root");
