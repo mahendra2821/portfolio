@@ -7,6 +7,7 @@ import ResumePDF from "./assets/jammula Mahendra Babu(resume).pdf"; // Place you
 
 const HeroSection = () => {
   return (
+    
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
