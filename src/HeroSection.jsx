@@ -51,7 +51,7 @@ const HeroSection = () => {
 
           {/* Resume Button */}
           <motion.a
-  href="/Mahendra_Babu_Jammula_Resume.pdf"
+  href="/Mahendra_Babu_jammula_resume.pdf"
   download="Mahendra_Resume.pdf"
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
