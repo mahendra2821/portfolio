@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import Profile from "./assets/pod_image_1.png"; // Adjust the path as needed
-// import resume from "./assets/Mahendra_Babu_jammula-resume.pdf";
 
 const HeroSection = () => {
   return (
@@ -52,7 +51,7 @@ const HeroSection = () => {
 
           {/* Resume Button */}
           <motion.a
-  href="/Mahendra_Babu_jammula-resume.pdf"
+  href="/Mahendra_Babu_Jammula_Resume.pdf"
   download="Mahendra_Resume.pdf"
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
@@ -60,6 +59,7 @@ const HeroSection = () => {
 >
   Download Resume
 </motion.a>
+
 
         </motion.div>
 
