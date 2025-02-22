@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import Profile from "./assets/profile_pic.png"; // Adjust the path as needed
+import Profile from "./assets/pod_image_1.png"; // Adjust the path as needed
 import ResumePDF from "./assets/jammula Mahendra Babu(resume).pdf"; // Place your resume in the assets folder
 
 const HeroSection = () => {
@@ -72,7 +72,7 @@ const HeroSection = () => {
           <img
             src={Profile} // Replace with your image URL
             alt="Profile"
-            className="w-full h-full md:w-80 md:h-80 rounded-[5px] "
+            className="w-full h-full md:w-80 md:h-80 rounded-[20px] "
           />
         </motion.div>
       </motion.div>
