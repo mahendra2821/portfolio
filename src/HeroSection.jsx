@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import Profile from "./assets/pod_image_1.png"; // Adjust the path as needed
-import ResumePDF from "./assets/Jammula-Mahendra-Babu-resume.pdf"; // Place your resume in the assets folder
+import resume from "./assets/Jammula-Mahendra-Babu-resume.pdf";
 
 const HeroSection = () => {
   return (
@@ -52,7 +52,7 @@ const HeroSection = () => {
 
           {/* Resume Button */}
           <motion.a
-            href={ResumePDF}
+            href={resume}
             download="Mahendra_Resume.pdf"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
