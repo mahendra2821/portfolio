@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import Profile from "./assets/pod_image_1.png"; // Adjust the path as needed
-import resume from "./assets/Jammula-Mahendra-Babu-resume.pdf";
+import resume from "./assets/Mahendra_Babu_jammula-resume.pdf";
 
 const HeroSection = () => {
   return (
