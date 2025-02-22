@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import Profile from "./assets/pod_image_1.png"; // Adjust the path as needed
-import ResumePDF from "./assets/jammula-Mahendra-Babu-resume.pdf"; // Place your resume in the assets folder
+import ResumePDF from "./assets/Jammula-Mahendra-Babu-resume.pdf"; // Place your resume in the assets folder
 
 const HeroSection = () => {
   return (
