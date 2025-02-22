@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import Profile from "./assets/pod_image_1.png"; // Adjust the path as needed
-import resume from "./assets/Mahendra_Babu_jammula-resume.pdf";
+// import resume from "./assets/Mahendra_Babu_jammula-resume.pdf";
 
 const HeroSection = () => {
   return (
@@ -52,14 +52,15 @@ const HeroSection = () => {
 
           {/* Resume Button */}
           <motion.a
-            href={resume}
-            download="Mahendra_Resume.pdf"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="inline-block mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
-          >
-            Download Resume
-          </motion.a>
+  href="/Mahendra_Babu_jammula-resume.pdf"
+  download="Mahendra_Resume.pdf"
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+  className="inline-block mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
+>
+  Download Resume
+</motion.a>
+
         </motion.div>
 
         {/* Right Side: Image */}
