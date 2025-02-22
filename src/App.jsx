@@ -10,6 +10,7 @@ import SocialMedia from "./SocialMedia";
 const App = () => {
   return (
     <div>
+      
       <Header />
       {/* <LandingPage/> */}
       <HeroSection />
