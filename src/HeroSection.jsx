@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import Profile from "./assets/pod_image_1.png"; // Adjust the path as needed
+import Profile from "./assets/pod_image_2.jpg"; // Adjust the path as needed
 
 const HeroSection = () => {
   return (
@@ -26,7 +26,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <h1 className="text-3xl md:text-5xl font-light leading-tight mb-4 animate-slide-in">
+          <h1 className="text-3xl md:text-5xl font-light leading-tight mb-4 animate-slide-in mt-[10vh]">
             I am <span className="text-yellow-300">Mahendra</span>
           </h1>
           <h2 className="text-xl md:text-3xl font-extrabold mb-4 font-serif">
@@ -52,13 +52,14 @@ const HeroSection = () => {
           {/* Resume Button */}
           <motion.a
   href="/Mahendra_Babu_jammula_resume.pdf"
-  download="Mahendra_Resume.pdf"
+  target="_blank" // Opens in a new tab instead of downloading
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
   className="inline-block mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
 >
-  Download Resume
+  View Resume
 </motion.a>
+
 
 
         </motion.div>
@@ -73,7 +74,7 @@ const HeroSection = () => {
           <img
             src={Profile} // Replace with your image URL
             alt="Profile"
-            className="w-full h-full md:w-80 md:h-80 rounded-[20px] "
+            className="w-full h-full md:w-80 md:h-80 rounded-[20px] mt-[5vh] "
           />
         </motion.div>
       </motion.div>

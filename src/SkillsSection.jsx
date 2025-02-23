@@ -69,3 +69,78 @@ const SkillsSection = () => {
 };
 
 export default SkillsSection;
+
+
+
+// import React from "react";
+// import { motion } from "framer-motion";
+// import { FaCheckCircle } from "react-icons/fa";
+
+// const roadmapSteps = [
+//   {
+//     title: "Outline Skills and Expertise",
+//     description:
+//       "Clearly outline your skills and services, such as administrative support, content creation, or social media management.",
+//   },
+//   {
+//     title: "Create a Unique Brand Voice",
+//     description:
+//       "Employ a consistent tone and style that reflects your personal brand and adds a professional touch to your portfolio website.",
+//   },
+//   {
+//     title: "Include Testimonials",
+//     description:
+//       "Include reviews and testimonials from past clients to build trust and validate your skills.",
+//   },
+//   {
+//     title: "Design Your Portfolio",
+//     description:
+//       "Have a clear, easy-to-navigate design that improves user experience.",
+//   },
+//   {
+//     title: "Update Regularly",
+//     description:
+//       "Your portfolio website should evolve as your skills and experiences grow. Regular content updates improve credibility.",
+//   },
+// ];
+
+// const SkillSSection = () => {
+//   return (
+//     <section className="bg-gray-900 py-16 px-6">
+//       <div className="max-w-6xl mx-auto text-center">
+//         <h2 className="text-4xl font-extrabold text-white mb-12">
+//           Building Your <span className="text-yellow-400">Virtual Assistant Portfolio</span>
+//         </h2>
+//       </div>
+//       <div className="relative max-w-4xl mx-auto">
+//         <div className="absolute w-1 bg-yellow-400 left-1/2 transform -translate-x-1/2 h-full hidden md:block"></div>
+//         <div className="flex flex-col space-y-12">
+//           {roadmapSteps.map((step, index) => (
+//             <motion.div
+//               key={index}
+//               className={`relative flex items-center ${
+//                 index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
+//               }`}
+//               initial={{ opacity: 0, y: 50 }}
+//               whileInView={{ opacity: 1, y: 0 }}
+//               viewport={{ once: true }}
+//               transition={{ duration: 0.6, delay: index * 0.2 }}
+//             >
+//               <div className="flex-1 bg-gray-800 p-6 rounded-lg shadow-lg border border-yellow-500 max-w-sm">
+//                 <h3 className="text-white text-2xl font-bold mb-3 flex items-center gap-2">
+//                   <FaCheckCircle className="text-yellow-400" /> {step.title}
+//                 </h3>
+//                 <p className="text-gray-300 text-sm">{step.description}</p>
+//               </div>
+//               <div className="w-12 h-12 flex justify-center items-center rounded-full bg-yellow-400 absolute md:relative left-1/2 transform -translate-x-1/2 -translate-y-6 md:translate-y-0 md:left-auto">
+//                 <FaCheckCircle className="text-gray-900 text-xl" />
+//               </div>
+//             </motion.div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default SkillSSection;
