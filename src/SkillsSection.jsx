@@ -22,7 +22,7 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-20 bg-black">
+    <section id="skills" className="py-20 w-[150vw] sm:w-full bg-black text-white ">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
         <motion.h2
           className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500 tracking-wide mb-12 font-[Poppins]"

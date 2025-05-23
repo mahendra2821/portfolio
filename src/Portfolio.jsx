@@ -70,7 +70,7 @@ const Portfolio = () => {
   return (
 
  
-    <section id="projects" className="py-16 bg-black">
+    <section id="projects" className="w-[150vw] sm:w-full bg-black text-white">
       <h2 className="text-4xl font-bold text-center text-white mb-8">
           Projects
         </h2>

@@ -86,7 +86,7 @@ const InterviewExperince = () => {
   };
 
   return (
-    <section id="InterviewExperince" className="bg-black py-16 px-4 md:px-20">
+    <section id="InterviewExperince" className="w-[150vw] sm:w-full bg-black text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <motion.h2
           className="text-5xl font-extrabold text-center text-green-600 mb-8 font-[Playfair Display]"

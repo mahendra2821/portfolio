@@ -38,7 +38,7 @@ const socialMedia = [
 
 const SocialMedia = () => {
   return (
-    <section id="social-media" className="py-20 bg-black">
+    <section id="social-media" className="py-20 w-[150vw] sm:w-full bg-black text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
         {/* Enhanced Heading */}
         <motion.h2

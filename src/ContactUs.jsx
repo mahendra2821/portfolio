@@ -11,7 +11,7 @@ const ContactUs = () => {
   const whatsappLink = `https://wa.me/${phoneNumber}?text=Hello!%20I%20would%20like%20to%20contact%20you.`;
 
   return (
-    <section id="contact-us" className="relative py-20 bg-black overflow-hidden">
+    <section id="contact-us" className="relative w-[150vw] sm:w-full bg-black text-white">
       {/* Background animation */}
       <motion.div
         className="absolute inset-0 w-full h-full bg-cover bg-center opacity-20 blur-[2px]"
