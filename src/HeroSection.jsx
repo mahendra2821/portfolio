@@ -6,12 +6,13 @@ import Profile from "./assets/pod_image_2.jpg"; // Adjust the path as needed
 
 const HeroSection = () => {
   return (
-    
+    <section id="resume">
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="h-screen flex items-center justify-center bg-black text-white"
+
     >
       <motion.div
         className="flex flex-col md:flex-row items-center w-full max-w-7xl px-4 md:px-6"
@@ -79,6 +80,7 @@ const HeroSection = () => {
         </motion.div>
       </motion.div>
     </motion.section>
+    </section> 
   );
 };
 

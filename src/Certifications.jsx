@@ -172,7 +172,7 @@ const Certifications = () => {
   }, [modalIsOpen]);
 
   return (
-    <section className="py-20 bg-black text-white relative">
+    <section id="certificates" className="py-20 bg-black text-white relative">
       <h2 className="text-4xl font-bold text-center mb-12">Certifications</h2>
 
       {/* Scrolling Wrapper */}
