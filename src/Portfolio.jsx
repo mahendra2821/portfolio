@@ -1,25 +1,26 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Modal from "react-modal";
+import pic11 from "./assets/pic_11.png";
+import pic10 from "./assets/pic_10.png";
+import pic12 from "./assets/pic_12.png";
+import pic13 from "./assets/pic_13.png";
+import pic14 from "./assets/pic_14.png";
 
 const projects = [
   {
     title: "BookStore",
-    img: "https://media-hosting.imagekit.io//3b6071ac4fe54065/Screenshot%202025-01-04%20070305.png?Expires=1833788916&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=GbWdIdHxxU5obIfkNVdysccFqPEcExDQ2WDjbnBPuvnLMds3IBqUAjf44gQQmka~pFgzIL6s62K1q~tphWVnThEoyWttyF6JgYEFR6vogqUbUcdz-M1C9kpFrt0SuqkSVMtESGWV7es2O3J7u13q8eNQzi12U7hV9Wy13ASqeA7wCxpJwNjBk4j6G5oxtVSPJsMe3bN~8ASojhZRALft1dzAZQpnR8nr1pQ6kMYuEJT~EWX3KUWMF74PB8cNVfCv162T95Sj0HshUxblNs8usk63R1UEtYw~iVRJQgSeSGLvL1HZh9Ff0X7KHGZe4nAv4WkiH-yI9ONvxfvyChBUcA__",
+    img: pic11,
     github_Frontend: "https://github.com/mahendra2821/BookStore_FrontEnd",
-    github_Backend : "https://github.com/mahendra2821/BookStore",
-    live_link : "https://676a1164643ca10008b7aba5--superlative-jalebi-2b55cb.netlify.app/",
-
-  
-
-    
-    
+    github_Backend: "https://github.com/mahendra2821/BookStore",
+    live_link: "https://bookkks.netlify.app/",
   },
+
   {
     title: "Student Dashboard",
     description: "",
-    img: "https://media-hosting.imagekit.io//e7528612113f4325/Screenshot%202025-02-10%20155811.png?Expires=1833791377&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=JA1VDY5PS7buhOAbQmZfpiBS4vveYgNqNZcxM6sX001xatrrsDhnvbR6fKpdBwW8wKBChuVij20Lr0pOfxS1lKiU-QM44aCttPY~FhIP4ND53J0LIYqjG5QnIVATQMTeqlzAMIh2C9uz08L-DIwNXbDsj7ZtRgbszj00Pa95~rY4TViRYN6xvQ08PqIZghitIuywRGChkFqf96ePbrPonJ3wuvO9QPNsCriqIA90D3ytDzu3MxhFwOP3dExXDYEImV9iMUYsjbPsU2WLGR2SvWN8ZQrcZbKo1JHsvO0gBjY01QdhT0H7auVbOglhLFwpc1aimht9vUUxe9Dkcf3E~w__",
-    github_Frontend: "https://github.com/mahendra2821/StudentDashBoard-Frontend-adminPanel",
+    img:pic12,
+        github_Frontend: "https://github.com/mahendra2821/StudentDashBoard-Frontend-adminPanel",
     github_Backend : "https://github.com/mahendra2821/StudentDashBoard",
     live_link : "https://studentresults-adminpanel.netlify.app/",
   },
@@ -28,8 +29,9 @@ const projects = [
   {
     title: "Protein Food",
     description: "",
-    img: "https://media-hosting.imagekit.io//bb8ab077521d4076/Screenshot%202025-02-10%20161314.png?Expires=1833792225&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=1IkMmTbrQVuJ-BWgS88bSLxMUO49Jy7OVlIS1FsuVpnQaBWqVpqQ8U03o-Ig-vzqSM6rjieyjTjbW8H1v-1qVpOgVQA4SHrsGsDtydh1ADLqfem6xC81tk56Mpsw-4HVvXByaT3ehuRwZlVDM7qsWcw0cgOtTEMi5mGfzTa~nRNuM~UmKaL6UVxeGSGEYIoKu7JSL5Y9v39c5Yq57wmJbe4kQV1jgkfh7dyKFDggP8x4r2AQpGhTCTZPMlhKNItCtpx8h5lJCukGGjQP7JoDkiF0Y75f8PtRIlDzmSLK~cZJj32daR-V8rexsETRz46RqRImTbaNTa4dpdqmqUz3qw__",
-    github: "",
+    img: pic13,
+
+        github: "",
     github_Frontend: "https://github.com/mahendra2821/proteinpro",
     live_link : "https://calm-salamander-111c46.netlify.app/",
   },
@@ -38,15 +40,16 @@ const projects = [
   {
     title: "Nostra clothing ",
     description: "",
-    img: "https://media-hosting.imagekit.io//8f5ee27dc4d748ff/Screenshot%202025-02-10%20162500.png?Expires=1833792943&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=rcWgKonNdKtTtmwB3eGMEwQmc1LjUoZUIlcooesCtO0PFtn-emVbnoPfRw5OfgUqaobJ9luFOsdFcMmdL1rYuW~tl9rlN2ehvmf37FLsi9vKjgPvtpI2kYvgnpBb5OEG0ejpNXuQIQnJPXIL0iuIyBvcr1y0P9z4YwCkvmQWCcgtL5yq~jKS4WiDZCfnzvJ2T8wyNBR1ToalKeUubWd4esR8MiOgSQ4IZ6fyBQR5a6yCX16116zlVAoIAG9iqYemeerK2fT95VCMV2mGK6gkqwvr-MUK~5qRtdf--vIcQghpxjpeqVYG-flsUunxR8L0r8ZDT~azymNbnTpXFVJ7AQ__",
-    github: "",
+    img:pic14,
+    
+        github: "",
     github_Frontend: "https://github.com/mahendra2821/demo",
     live_link : "https://dulcet-semifreddo-1a4ddf.netlify.app/",
   },
   {
     title: "Hospital Management",
     description: "",
-    img: "https://media-hosting.imagekit.io//1751bf7ff4824938/Screenshot%202025-02-10%20215602.png?Expires=1833812853&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=0qOVyAtHWrNyK3galo7qXEqVc7R2gQMs7cX3reWvxXhfNJ~V2efCIWyhy-I44KK7Uva4eW3wqgM6cN6vWoCPIp4YkG741zbKNKKcUPUHLkZDlrEGdbkdev4p56pckz7w8i-vYuYvJOyFBvvzIRAlXBkcpd6gbiZo89AhjCV6nlxdn9O4eRHOk8OQ-Ilh~K6nyUIBoL6eqAk6jCjpmyRfLi1SA4jU0W8yxozB~AnCv830CPuqARJf10HgoGDDO5PvUoLymNVFpQ~K7DIQCMR6RcMmhL4HkcAKbODOA-9iai7PWwoFH8Z~vnZ9TdqJMGoby1vy~qauJsCHsKhlHkqNGw__",
+    img: pic10,
     github: "",
     github_Frontend: "https://github.com/mahendra2821/Gydocare_01",
     live_link : "https://dainty-syrniki-aed4af.netlify.app/",  },
