@@ -4,92 +4,106 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Modal from "react-modal";
+import pic15 from "./assets/pic_15.png";
+import pic16 from "./assets/pic_16.png";
+import pic17 from "./assets/pic_17.png";
+import pic18 from "./assets/pic_18.png";
+import pic19 from "./assets/pic_19.png";
+import pic20 from "./assets/pic_20.png";
+import pic21 from "./assets/pic_21.png";
+import pic22 from "./assets/pic_22.png";
+import pic23 from "./assets/pic_23.png";
+import pic24 from "./assets/pic_24.png";
+import pic25 from "./assets/pic_25.png";
+import pic26 from "./assets/pic_26.png";
+import pic27 from "./assets/pic_27.png";
+import pic28 from "./assets/pic_28.png";
 
 const certifications = [
   {
     title: "Genrative AI Mega Workshop",
     authority: "NXTWAVE ACADEMY",
     date: "sep 2024",
-    image: "https://cdn1.ccbp.in/misc/gen-ai-2-mw/VKBKS5YSMZ.png",
-  },
+    // image: "https://cdn1.ccbp.in/misc/gen-ai-2-mw/VKBKS5YSMZ.png",
+    image: pic28,
+    },
   {
     title: "Generative AI Mega WorkShop 2.0 (participation certificate)",
     authority: "NXTWAVE ACADEMY ",
     date: "Sep 2024",
-    image: "https://media-hosting.imagekit.io//6a55366780244db9/Screenshot%202024-09-22%20084929.png?Expires=1833707686&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=x9pdTS-kXcHEAjDsTCV~tp5xfWgmOsieSV4zyDjit1vxZp89LyPu3mmcbdB15AL3A3R82bTQw9aymtTg28Eg33-Kq80-TyGmpTxN-HBv9jbU5Cslcq~9h-AxJPO-jgm79O0Q-vf33twWNRc2j4xP-F23PpXTIJzohF-NMDRBNMUjn4-xdrxw8iV3Nl3UwKM3Nx-lm-0-tQbD0mxMOAk2fXCixeYnXzXUsYKDDmwXnWOFafZkyR7JGx74O8F2vcL5sIp6OLg6c8P9Rb8YP23iYGcoFraMwQnOgdPItda9NOeBdE0lg-em25zkGvUhRcn~uVF8uIUvTs4cDjCJlTwoPQ__",
-  },
+    image: pic27,
+   },
   {
     title: "React Js",
     authority: "NXTWAVE ACADEMY",
     date: "Jul 2024",
-    image: "https://media-hosting.imagekit.io//17393e328ea047b6/Screenshot%202025-02-09%20161134.png?Expires=1833705721&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Q8SeXBkYE80EE47lucPQtgu8lZQQvvZDD0N~6LHyzwydcfJATtA9SR2qzzapwQhgn0Ji-LZ6cPRIdUaV~1w1Bx39fO2ZB4tSyk9hFvXlU~zlW-eFhLCydGvy-ss~wzRT5SdsFBH8KHLTMdN2xngD1Ym30B21EUpg~FJSkcQLB5LNG040twbmMCUkoHmGMAeLI7gEraHj6yxNxlWPLERA7SNhdluWeqDOzXyjA85hD3rHDO-s3op1Oa4JXEitw-RXzOU5MqDZ2YOlYpemT8rsQwUGVjwvzCgk6LylLhbK7Pmg3pnXaC9pwLeQ8q9zSFcjQZECUzCmyJit5lqBp4CY9A__",
-  },
+    image: pic15
+  ,  },
   {
     title: "Node Js",
     authority: "NXTWAVE ACADEMY",
     date: "March 2024",
-    image: "https://media-hosting.imagekit.io//063d7fa77bc24a2b/Screenshot%202025-02-09%20161538.png?Expires=1833705954&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=vzoEicdaZnLSN1kMEeAKLWp3NWHk6bDy1Db0DX8wl6Z6mRWhN-XT4bGuFEmiISRb8QhQu0mpOimU9H2qRuYcfHmtHu6bzXDCYeHK1uB3vuqrQy9YFWzjp7vwt1uKW2iLtaW9rGRbwO-2lt446qijk4jiwWprms9sMhX7McTneo6o~aoz9F23LGR7Ill8GOH7bBK1wZevEuOhDH5wopVnm4H9dJZTr-Zv1hYSjfTjHp61Ju6Xo1l3uWP7YjyWilPqvW6CIrIhX38cEcGO-N6P9N7bi1uR2FnAUjeVuGirHrDDg4DB0GUYXcPGvd6iEe8cFP1M4nSqi2laGa9YwFfPRQ__",
-  },
+    image: pic16,
+    },
   {
     title: "Responsive Web Design using Flexbox",
     authority: "NXTWAVE ACADEMY",
     date: "Jan 2024",
-    image: "https://media-hosting.imagekit.io//6f621622e3c647c7/Screenshot%202025-02-09%20161902.png?Expires=1833706166&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=MB9LcfALbB~r81zDsSdCHP8uifrZ4QZkuPwUE~-t0sGqVr52UyscJ9-lLGKsnPXyCdQN7v4aTtd4Vz0NiCvQZfMdgHmjA6ZbHTtAbJhgDCoNQK~KFyub6AS2DyejATGhR2bXNT5Gq9njwFa4NG-cbkC2Bh0wrjTIEVkdQgu4K0o0038oggxYmbgOeWwbOXFB-q-UivYCJikRzLfFH~Bl1k-ecMzVvdFJKH~c6tXRM~6uC0dI7I-PGbbvIssCjOdi60wAZBRtIIaEYo-ih6OxgGf9k7~Q21Fr9QwSPcnnNk09efnaD47HX1x4EI9FBqH-~0oPXYzNlJb3wAeonvDOGA__",
-  },
+    image: pic17,
+   },
   {
     title: "Introduction to Databases",
     authority: "NXTWAVE ACADEMY",
     date: "Dec 2023",
-    image: "https://media-hosting.imagekit.io//0617634a2ae54393/Screenshot%202025-02-09%20162244.png?Expires=1833706384&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Y8HLuxwSb4zTyMGCHObI3lo4k-Y9gTTn40KmnZOtvd7vI4b7r-YmNw4ypJGujO1Xx38v52R9S8AWjncwjxKUUbk9nlU9aJM4i3WBLwNrKr2VvooO6XkZMx6BLJPfY18pyNuTCbJeLY6whBXqf0vXW~wlpeR5ohxOPNCrGDJeqWnYhF7m7PD~jkjtF3Nv8Nj8LrwRFjNfuGpdMPjp1IeAj4ec4At32wLIThOB4CQMaG-Wm0ZKVckv9~3dLJLn-sJ8~YeEupF97aCeRfCPN23OKoWCq24VpVAu2~OeycxZvIfQAeguOQQJyrBlm-vpw~wPKnhB597mn3I13dCA3l0V3g__",
-  },
+    image: pic18,
+   },
   {
     title: "JavaScript Essentials",
     authority: "NXTWAVE ACADEMY",
     date: "Dec 2023",
-    image: "https://media-hosting.imagekit.io//7ada20db12b34a79/Screenshot%202025-02-09%20172720.png?Expires=1833710412&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ccuxG7~9Uq6a5fx767pgpvtNduG~owm-rceaE4qDiSZYObb0JoHTSeKBc4fd50K5ub5uTjgc0ewSFssYXAGmjM8lrVXZplfIofeGXN65mh42gt5DrJO6qLlQYK~PeFoOxF3FLSyas5Hml1MutMiPHmWL7WXWOirnPvJ67eFQJvyHX7aARSPfJGDJpwP-uHON0T4U5nYnrz2qlvnAqCop8xoOPvrQzFBykbYcR8O2GTUTBj4DwVW8XItNOyjnvri7vVCNmcV-bYf-obzlTl9rzHmjI7FqpT2EOCIwna6hMq5tRnySU2lWWTdvDNHtdz8De4K7maL~TnfYcPfpzkMNvw__",
-  },
+    image: pic25  },
   {
     title: "Build Your Own Dynamic Web Application",
     authority: "NXTWAVE ACADEMY",
     date: "Oct 2023",
-    image: "https://media-hosting.imagekit.io//7abe279fc9894c02/Screenshot%202025-02-09%20172700.png?Expires=1833710407&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=mWB9UtqBI4kUyldNZVewA8pjubSkn7SMTRzghQg5nrBHxV8B08UAon1KDZREFZMliyFoV-mnVUc8um-no1V~i7~zI3zC1SNd5h-bSfjnco40T8MSO5PImyRCSW-zu-F9~K2hdlYEDj0BADB097OkvUQYrPaAMPY1-EsOSpcqEGiaaH7fXoqpEjZGl81G5bLcLxRK6rBz9~gPvKNIoqKNLyfbuObjG3VjWqJNB6pChOcn2qGz~tdISn4JIadzWFrSrbos~0TMCXUgQ9K2DzacSe5L5321hL0rmh-iE2jPeZzU~7CLj~7KN7yNb0mlLOI~rnQPiqQ5fXD-X72APwY-hA__",
-  },
+    image:pic24,
+   },
   {
     title: "Programming Foundations With Python ",
     authority: "NXTWAVE ACADEMY",
     date: "Sep 2023",
-    image: "https://media-hosting.imagekit.io//5b35d4c4aa484a72/Screenshot%202025-02-09%20172639.png?Expires=1833710402&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=DBCjF4MuB-inWdm9otAZvzxxBh8ZPX9D8R9xp3IT2ya3tiNPRUZRat5-ZppBKfEZlbQs4oIEc9La4qkeyDwGmEQUfEoYB-09pHBpwoadbxlpq7eSi-ibEJJc7MMRx6J0HVh~UgOZo8v5oX83aPbQ2lcsNR5cPQh-lasM-k51QaDoAebM6wOO4e16AgtUfOgvcJAO33TrPYrJ3v7jzEioa3BgqfJtJ45avfTD3inoDlnSChTc6vv5BBxQVwdubO5N3Ak4m1-CvzsY1fVNOV6a1oj-iZNQVuHUQ~vqL3nicwoDHwsGV8Ee5VB~KgWICCt~EfXwjUioLWT-Tdhk5RCB9g__",
-  },
+    image: pic23
+   },
   {
     title: "XPM 4.0 Fundamentals",
     authority: "NXTWAVE ACADEMY",
     date: "Aug 2023",
-    image: "https://media-hosting.imagekit.io//72e564f25a1a438b/Screenshot%202025-02-09%20172618.png?Expires=1833710395&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=atXKc2qC~hKWaR0ZyoJMP9yhn98qBZSL8PSkSW4oDPGAXEuTd4sq7OqLjBd-itvrE4a-pCl53F1oI6g6poPUTDM-VBrbx8eGbNrJhzww2mCGZuyhIkTbqfp7dcTdBE6oLP75TH5FQiTzipOT3brUY20-XqCIwEzbfo5NzGXfGqXpEsPyeDzOt~v-ee3KhiB574A3Urw1dGRzjif8tbTN6lfqeg-NUoJFNWcAJrQZSiKuTPOu6FLj~6eL3nIP2Yl~zJgRYevax~oHW4NtwGw4ifn2byggbqlLY9giYDdORvQWK-maDVHKOSg1JStK0O6MWOr9T8zpkR9njvh9NwgMkQ__",
-  },
+    image: pic22,
+   },
   {
     title: "Build Your Own Responsive Website",
     authority: "NXTWAVE ACADEMY",
     date: "May 2023",
-    image: "https://media-hosting.imagekit.io//29e30da5d59c4580/Screenshot%202025-02-09%20172545.png?Expires=1833710384&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=esxHG1PzxgysN7M4HmuJMsNiVF10UAsKyxUUnfgyaquVU~CJ2nXrx7zvVyAjBkCF~pFW9PtFoeqzHYNaJ4yyk2TtwuAivWRedZ9LO4DuOdxRIPwf9549kU6UU4JPgy6AmLJQtFGSRzNu-y-Ro6zlTw5lQ49dEXFnARGFqPoz~Kdt56wxWcrXMHCWKpOlY5UIIP-y-4Stot0E0ShLFz4Wc~c2pTCC5HQaFoLEDHfSSM7V82b3AyJtiAtK-Yd-vtl4OqF5nwWNTv-KT3FbX~UfZb2d-egeO0JchrgFXyE-HDZqCvx-MvEgxUzWgVu4viT8BuJRQpkfLNw-X-wRzHtd0w__",
-  },
+    image:pic21,
+   },
   {
     title: "Build Your Own Static Website",
     authority: "NXTWAVE ACADEMY",
     date: "Nov 2022",
-    image: "https://media-hosting.imagekit.io//4999efacb508431c/Screenshot%202025-02-09%20172515.png?Expires=1833710376&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=qRFen417yCLAQ1Eev54RbCqdwVTbzo4Fxx4SYepYvsFnohLyqlpbvU9RhpMkiUce2hVfgId4Z6OS2R8mT3o-ji-W-T2NyLbQOFjfeUx3qRS-DbcX2Vtadz58WSoET9fYrFTy3RTgn8FpIef6uo5wBebU2mqbfo4X19Uc34EbUz2eEFZP6vFeoqGAtZMP6egU3KJWAdbtionikQvF1MvC4V7nZRd2JrZEt0XFMiRYaEVoZnN6ZL8GAROiyu2m8HSsQgm4i9oLsol5ziV~tCksCpp16yQMmkQm8GHSua2bL87DW4Do8-r~QRaCMWbiRS3KILIg7k7cKFuJvYrxf47VYA__",
+    image:pic20,
   },
   {
     title: "Computer Networks and Internet Protocols",
     authority: "Indian Institute of Technology, Kharagpur",
     date: "May 2024",
-    image: "https://media-hosting.imagekit.io//c08c3bae65034748/Screenshot%202025-02-09%20163510.png?Expires=1833710364&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Ab4YgJtgxQ3lm87qSK~CGjD-JW97TOJUFz34WWFW0N3uCWJPGDwEJN5vPoqge1G6BaRsHZxk0Fjffyorpf7OwGrubJ-er9NpDOLZmk5rQdloj-kyAb8tdlCErGeLQRWym1n8WdBRoMaXfMz5NcmOZnCllf3ZjCKWvWgTPkti1Dack07ktFs15BYfM2bGpxHwRjWkwLkn5DPnTd1F~DIh6ZDdY7vM9~jzAeC75zcYuLhmO-fkeZtwsZDiZde23ZS4DDnd3nU3d94ACHEI6MvxH2HBB6jorgcSHW0alrSfIrljnf0AM-eUzq1lnvBQvk5KKb1EQJHZ2CzITaX-e~W1fw__",
-  },
+    image: pic19,
+   },
   {
     title: "ChatGpt & AI Tools",
     authority: "Be10x",
     date: "sep 2024",
-    image: "https://media-hosting.imagekit.io//038762f3a5224d70/Screenshot%202024-09-22%20092111.png?Expires=1833710695&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jm0AA-tPKjy5fvjJ2NLjWaE0g1Inszjbbro584uiAZQ4EzRD6m46ZJzGLyrtT1pv32n27~dcBaihqYerFTXDmHrglglbV6NFCI874RlG-b-B3TGotzRuZDrIXjI2zFnZwDtSODkXIiEvZ4z7P7Irec~EdTeJPma3yUnGeEclDskePaIXOyfbJOOo8VyPz488LY04JXy2nF9MJQBk3ZqQdWkm-3Ubr7vErWvhqeSLjSJ5n96lMRqWZ3f4YYlsJ47qQpwLlaSfC0JTKTfwzg1vWfVGTWzHfPXq43czD2M4I~gpAZf3PlzwWXsCiYFS3ccFZBZH56G7gZLNhQd0sVD34w__",
-  },
+    image: pic26 ,
+   },
 
 
 
