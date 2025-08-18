@@ -13,7 +13,7 @@ const projects = [
     img: pic11,
     github_Frontend: "https://github.com/mahendra2821/BookStore_FrontEnd",
     github_Backend: "https://github.com/mahendra2821/BookStore",
-    live_link: "https://bookkks.netlify.app/",
+    live_link: "https://bookkkss.netlify.app",
   },
 
   {
@@ -22,7 +22,7 @@ const projects = [
     img:pic12,
         github_Frontend: "https://github.com/mahendra2821/StudentDashBoard-Frontend-adminPanel",
     github_Backend : "https://github.com/mahendra2821/StudentDashBoard",
-    live_link : "https://studentresults-adminpanel.netlify.app/",
+    live_link : "https://studentresults-adminpanell.netlify.app",
   },
 
 
@@ -33,7 +33,7 @@ const projects = [
 
         github: "",
     github_Frontend: "https://github.com/mahendra2821/proteinpro",
-    live_link : "https://calm-salamander-111c46.netlify.app/",
+    live_link : "https://protein-proo.netlify.app",
   },
 
 
@@ -41,10 +41,10 @@ const projects = [
     title: "Nostra clothing ",
     description: "",
     img:pic14,
-    
-        github: "",
+
+     github: "",
     github_Frontend: "https://github.com/mahendra2821/demo",
-    live_link : "https://dulcet-semifreddo-1a4ddf.netlify.app/",
+    live_link : "https://nostraa.netlify.app",
   },
   {
     title: "Hospital Management",
@@ -52,7 +52,7 @@ const projects = [
     img: pic10,
     github: "",
     github_Frontend: "https://github.com/mahendra2821/Gydocare_01",
-    live_link : "https://dainty-syrniki-aed4af.netlify.app/",  },
+    live_link : "https://hospital-mana.netlify.app",  },
 ];
 
 Modal.setAppElement("#root");
