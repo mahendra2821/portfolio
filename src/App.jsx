@@ -8,6 +8,7 @@ import InterviewExperince from "./InterviewExperince";
 import Portfolio from "./Portfolio";
 import SkillsSection from "./SkillsSection";
 import SocialMedia from "./SocialMedia";
+import SystemDesign from "./SystemDesign";
 const App = () => {
   return (
     <div>
@@ -18,6 +19,8 @@ const App = () => {
       <HeroSection />
       <AboutSection/>
       <SkillsSection/>
+            <SystemDesign/>
+
       <Portfolio/>
       <InterviewExperince/>
       <Certifications/>
