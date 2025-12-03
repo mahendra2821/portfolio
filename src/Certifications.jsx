@@ -256,9 +256,9 @@ import pic16 from "./assets/pic_16.png";
 import pic17 from "./assets/pic_17.png";
 import pic18 from "./assets/pic_18.png";
 import pic19 from "./assets/pic_19.png";
-import pic20 from "./assets/pic_20.png";
-import pic21 from "./assets/pic_21.png";
-import pic22 from "./assets/pic_22.png";
+// import pic20 from "./assets/pic_20.png";
+// import pic21 from "./assets/pic_21.png";
+// import pic22 from "./assets/pic_22.png";
 import pic23 from "./assets/pic_23.png";
 import pic24 from "./assets/pic_24.png";
 import pic25 from "./assets/pic_25.png";
@@ -381,43 +381,43 @@ const Certifications = () => {
       </div>
 
       {/* Modal */}
-    <Modal
-  isOpen={modalIsOpen}
-  onRequestClose={closeModal}
-  className="fixed inset-0 flex items-center justify-center z-50" // Ensures modal is on front
-  overlayClassName="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm z-40" // Backdrop below modal
->
-  {selectedCert && (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.8 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
-      className="relative bg-gray-900 rounded-2xl shadow-2xl p-6 max-w-4xl mx-auto text-center z-50"
-    >
-      {/* Close Button top-right */}
-      <button
-        onClick={closeModal}
-        className="absolute top-4 right-4 px-3 py-1 bg-red-500 hover:bg-red-600 text-white rounded-lg shadow-md"
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        className="fixed inset-0 flex items-center justify-center z-50" // Ensures modal is on front
+        overlayClassName="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm z-40" // Backdrop below modal
       >
-        ✕
-      </button>
+        {selectedCert && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            className="relative bg-gray-900 rounded-2xl shadow-2xl p-6 max-w-4xl mx-auto text-center z-50"
+          >
+            {/* Close Button top-right */}
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 px-3 py-1 bg-red-500 hover:bg-red-600 text-white rounded-lg shadow-md"
+            >
+              ✕
+            </button>
 
-      <h2 className="text-2xl font-bold text-white mb-4">
-        {selectedCert.title}
-      </h2>
+            <h2 className="text-2xl font-bold text-white mb-4">
+              {selectedCert.title}
+            </h2>
 
-      <img
-        src={selectedCert.image}
-        alt={selectedCert.title}
-        className="w-auto max-h-[75vh] mx-auto rounded-lg shadow-lg"
-      />
+            <img
+              src={selectedCert.image}
+              alt={selectedCert.title}
+              className="w-auto max-h-[75vh] mx-auto rounded-lg shadow-lg"
+            />
 
-      <p className="mt-4 text-gray-400">{selectedCert.authority}</p>
-      <p className="text-sm text-gray-500">Issued: {selectedCert.date}</p>
-    </motion.div>
-  )}
-</Modal>
+            <p className="mt-4 text-gray-400">{selectedCert.authority}</p>
+            <p className="text-sm text-gray-500">Issued: {selectedCert.date}</p>
+          </motion.div>
+        )}
+      </Modal>
 
     </section>
   );

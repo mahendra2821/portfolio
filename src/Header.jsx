@@ -12,7 +12,7 @@
 // // //     { name: "Certificates", path: "/certificates" },
 // // //     { name: "Interview Experience", path: "/interviewExperince" },
 // // //     { name: "Connect Us", path: "/connectUs" },
- 
+
 // // //   ];
 
 // // //   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -299,11 +299,13 @@ const Header = () => {
     { name: "Resume", href: "#resume" },
     { name: "About Me", href: "#about" },
     { name: "Skills", href: "#skills" },
+    { name: "System Design", href: "#system-design" },
+
     { name: "Projects", href: "#projects" },
     { name: "Certificates", href: "#certificates" },
     { name: "Interview Experience", href: "#InterviewExperince" },
     { name: "Connect Us", href: "#contact-us" },
-    { name: "System Design", href: "#system-design" },
+    // { name: "System Design", href: "#system-design" },
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -355,9 +357,8 @@ const Header = () => {
 
       {/* Mobile Right-Side Navigation */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-black/80 backdrop-blur-lg shadow-lg transform transition-transform duration-700 ease-in-out z-50 ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden`}
+        className={`fixed top-0 right-0 h-full w-64 bg-black/80 backdrop-blur-lg shadow-lg transform transition-transform duration-700 ease-in-out z-50 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+          } md:hidden`}
       >
         <div className="p-6 mt-20 space-y-4">
           <button

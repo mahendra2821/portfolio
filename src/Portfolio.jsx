@@ -72,7 +72,7 @@
 
 //   return (
 
- 
+
 //     <section id="projects" className="w-[150vw] sm:w-full bg-black text-white">
 //       <h2 className="text-4xl font-bold text-center text-white mb-8">
 //           Projects
@@ -176,7 +176,8 @@ import pic11 from "./assets/pic_11.png";
 import pic10 from "./assets/pic_10.png";
 import pic12 from "./assets/pic_12.png";
 import pic13 from "./assets/pic_13.png";
-import pic14 from "./assets/pic_14.png";
+// import pic14 from "./assets/pic_14.png";
+import pic29 from "./assets/pic_29.png";
 
 // Particle Component
 const Particle = ({ delay, size, shape }) => (
@@ -209,6 +210,14 @@ const projects = [
     live_link: "https://bookkkss.netlify.app",
   },
   {
+    title: "BiteSized",
+    img: pic29,
+    github_Frontend: "https://github.com/mahendra2821/BiteSized-Frontend",
+    github_Backend: "https://github.com/mahendra2821/BiteSized-Backend",
+
+    live_link: "https://bitesized-nutrion.netlify.app/",
+  },
+  {
     title: "Student Dashboard",
     img: pic12,
     github_Frontend: "https://github.com/mahendra2821/StudentDashBoard-Frontend-adminPanel",
@@ -221,12 +230,15 @@ const projects = [
     github_Frontend: "https://github.com/mahendra2821/proteinpro",
     live_link: "https://protein-proo.netlify.app",
   },
-  {
-    title: "Nostra Clothing",
-    img: pic14,
-    github_Frontend: "https://github.com/mahendra2821/demo",
-    live_link: "https://nostraa.netlify.app",
-  },
+
+
+
+  // {
+  //   title: "Nostra Clothing",
+  //   img: pic14,
+  //   github_Frontend: "https://github.com/mahendra2821/demo",
+  //   live_link: "https://nostraa.netlify.app",
+  // },
   {
     title: "Hospital Management",
     img: pic10,
@@ -264,7 +276,7 @@ const Portfolio = () => {
 
       {/* Heading */}
       <motion.h2
-        className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-blue-500 text-center mb-16"
+        className="text-5xl font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-pink-400 to-blue-500 text-center mb-16"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -284,9 +296,8 @@ const Portfolio = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
-            className={`relative flex items-center w-full max-w-5xl my-12 ${
-              index % 2 === 0 ? "justify-start pr-20" : "justify-end pl-20"
-            }`}
+            className={`relative flex items-center w-full max-w-5xl my-12 ${index % 2 === 0 ? "justify-start pr-20" : "justify-end pl-20"
+              }`}
           >
             <motion.div
               whileHover={{ scale: 1.08, rotate: 1 }}

@@ -109,7 +109,6 @@
 
 
 
-import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -119,9 +118,9 @@ const Footer = () => {
 
       {/* Glowing Gradient Border */}
       <div className="absolute inset-0">
-                <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-gray-700 to-transparent mb-12"></div>
+        {/* <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-gray-700 to-transparent mb-12"></div> */}
 
-                      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-gray-700 to-transparent mb-12"></div>
+        <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-gray-700 to-transparent mb-12"></div>
 
       </div>
 
@@ -135,7 +134,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Jammula Mahendra Babu 
+            Jammula Mahendra Babu
           </motion.h1>
 
           {/* Quick Links */}
