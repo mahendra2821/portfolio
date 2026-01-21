@@ -301,11 +301,12 @@ const Header = () => {
     { name: "Skills", href: "#skills" },
     { name: "System Design", href: "#system-design" },
 
+
     { name: "Projects", href: "#projects" },
     { name: "Certificates", href: "#certificates" },
     { name: "Interview Experience", href: "#InterviewExperince" },
+
     { name: "Connect Us", href: "#contact-us" },
-    // { name: "System Design", href: "#system-design" },
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -317,6 +318,7 @@ const Header = () => {
           {/* Logo */}
           <h1 className="text-4xl font-extrabold">
             <span className="font-serif text-blue-500">Port</span>
+
             <span className="font-sans text-white">folio</span>
           </h1>
 
