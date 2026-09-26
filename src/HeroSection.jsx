@@ -1,294 +1,338 @@
 
 
 
-// // import React from "react";
-// // import { motion } from "framer-motion";
-// // import { Typewriter } from "react-simple-typewriter";
-// // import Profile from "./assets/pod_image_2.jpg"; // Ensure correct path
-
-// // const HeroSection = () => {
-// //   return (
-// //     <section id="resume" className="w-[150vw] sm:w-full bg-black text-white ">
-// //       <motion.section
-// //         initial={{ opacity: 0 }}
-// //         animate={{ opacity: 1 }}
-// //         transition={{ duration: 1.5 }}
-// //         className="min-h-screen flex items-center justify-center w-full"
-// //       >
-// //         <motion.div
-// //           className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-4 sm:px-6 md:px-12"
-// //           initial={{ y: 50 }}
-// //           animate={{ y: 0 }}
-// //           transition={{ duration: 1.5, ease: "easeOut" }}
-// //         >
-// //           {/* Left Side: Text */}
-// //           <motion.div
-// //             className="text-center md:text-left space-y-4 w-full md:w-1/2 mt-10 md:mt-0"
-// //             initial={{ opacity: 0 }}
-// //             animate={{ opacity: 1 }}
-// //             transition={{ delay: 0.5, duration: 1 }}
-// //           >
-// //             <h1 className="text-3xl md:text-5xl font-light leading-tight">
-// //               I am <span className="text-yellow-300">Mahendra</span>
-// //             </h1>
-// //             <h2 className="text-xl md:text-3xl font-extrabold font-serif">
-// //               <span className="text-yellow-400">A Full Stack Developer & Problem Solver</span>
-// //             </h2>
-
-// //             <p className="text-sm md:text-lg font-medium">
-// //               <Typewriter
-// //                 words={[
-// //                   "Welcome to my personal blog!",
-// //                   "Let's build something amazing together!",
-// //                   "Feel free to explore my work.",
-// //                 ]}
-// //                 loop={Infinity}
-// //                 cursor
-// //                 cursorStyle="_"
-// //                 typeSpeed={80}
-// //                 deleteSpeed={50}
-// //                 delaySpeed={2000}
-// //               />
-// //             </p>
-
-// //             <motion.a
-// //               href="/Mahendra_Babu_Jammula-Resumee.pdf"
-// //               target="_blank"
-// //               whileHover={{ scale: 1.1 }}
-// //               whileTap={{ scale: 0.9 }}
-// //               className="inline-block mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
-// //             >
-// //               View Resume
-// //             </motion.a>
-// //           </motion.div>
-
-// //           {/* Right Side: Image */}
-// //           <motion.div
-// //             className="w-full md:w-auto flex justify-center mt-10 md:mt-0"
-// //             initial={{ scale: 0.8 }}
-// //             animate={{ scale: 1 }}
-// //             transition={{ duration: 1 }}
-// //           >
-// //             <img
-// //               src={Profile}
-// //               alt="Profile"
-// //               className="w-60 h-60 md:w-80 md:h-80 rounded-[20px] object-cover shadow-xl"
-// //             />
-// //           </motion.div>
-// //         </motion.div>
-// //       </motion.section>
-// //     </section>
-// //   );
-// // };
-
-// // export default HeroSection;
-
-
-
-
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { Typewriter } from "react-simple-typewriter";
-// import Profile from "./assets/pod_image_2.jpg"; // Ensure correct path
-
-// const HeroSection = () => {
-//   return (
-//     <section id="resume" className="w-[158vw] sm:w-full bg-black text-white ">
-//       <motion.section
-//         initial={{ opacity: 0 }}
-//         animate={{ opacity: 1 }}
-//         transition={{ duration: 1.5 }}
-//         className="min-h-screen flex items-center justify-center w-full"
-//       >
-//         <motion.div
-//           className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-4 sm:px-6 md:px-12"
-//           initial={{ y: 50 }}
-//           animate={{ y: 0 }}
-//           transition={{ duration: 1.5, ease: "easeOut" }}
-//         >
-//           {/* Left Side: Text */}
-//           <motion.div
-//             className="text-center md:text-left space-y-4 w-full md:w-1/2 mt-10 md:mt-0"
-//             initial={{ opacity: 0 }}
-//             animate={{ opacity: 1 }}
-//             transition={{ delay: 0.5, duration: 1 }}
-//           >
-//             <h1 className="text-3xl md:text-5xl font-light leading-tight">
-//               I am <span className="text-yellow-300">Mahendra</span>
-//             </h1>
-//             <h2 className="text-xl md:text-3xl font-extrabold font-serif">
-//               <span className="text-yellow-400">A Full Stack Developer & Problem Solver</span>
-//             </h2>
-
-//             <p className="text-sm md:text-lg font-medium">
-//               <Typewriter
-//                 words={[
-//                   "Welcome to my personal blog!",
-//                   "Let's build something amazing together!",
-//                   "Feel free to explore my work.",
-//                 ]}
-//                 loop={Infinity}
-//                 cursor
-//                 cursorStyle="_"
-//                 typeSpeed={80}
-//                 deleteSpeed={50}
-//                 delaySpeed={2000}
-//               />
-//             </p>
-
-//             <motion.a
-//               href="/Mahendra_Babu_Jammula-Resumee.pdf"
-//               target="_blank"
-//               whileHover={{ scale: 1.1 }}
-//               whileTap={{ scale: 0.9 }}
-//               className="inline-block mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
-//             >
-//               View Resume
-//             </motion.a>
-//           </motion.div>
-
-//           {/* Right Side: Image */}
-//           <motion.div
-//             className="w-full md:w-auto flex justify-center mt-10 md:mt-0"
-//             initial={{ scale: 0.8 }}
-//             animate={{ scale: 1 }}
-//             transition={{ duration: 1 }}
-//           >
-//             <img
-//               src={Profile}
-//               alt="Profile"
-//               className="w-60 h-60 md:w-80 md:h-80 rounded-[20px] object-cover shadow-xl"
-//             />
-//           </motion.div>
-//         </motion.div>
-//       </motion.section>
-//     </section>
-//   );
-// };
-
-// export default HeroSection;
-
-
-
 import React from "react";
 import { motion } from "framer-motion";
-import { Typewriter } from "react-simple-typewriter";
-import Profile from "./assets/pod_image_2.jpg";
+import {
+  FiArrowUpRight,
+  FiMapPin,
+  FiGithub,
+  FiLinkedin,
+} from "react-icons/fi";
 
-// Generate floating particles
-const Particle = ({ delay }) => {
-  // Random size (small dots + few big ones)
-  const size = Math.random() < 0.8 ? Math.random() * 15 + 2 : Math.random() * 20 + 10;
-
-  // Random shape: circle, square, triangle
-  const shapes = ["circle", "square", "triangle", "polygon"];
-  const shape = shapes[Math.floor(Math.random() * shapes.length)];
-
-  // Random pastel color (molecule vibe)
-  const colors = ["bg-red-500", "bg-yellow-400", "bg-blue-400", "bg-green-400", "bg-purple-500"];
-  const color = colors[Math.floor(Math.random() * colors.length)];
-
-  return (
-    <motion.div
-      className={`absolute ${color} opacity-60`}
-      style={{
-        width: size,
-        height: size,
-        clipPath:
-          shape === "circle"
-            ? "circle(50%)"
-            : shape === "square"
-            ? "inset(0 0 0 0 round 2px)"
-            : "polygon(50% 0%, 0% 100%, 100% 100%)", // triangle
-      }}
-      initial={{ y: "100vh", x: Math.random() * window.innerWidth, opacity: 0 }}
-      animate={{
-        y: ["100vh", "-10vh"],
-        opacity: [0, 1, 0],
-        rotate: shape === "triangle" ? [0, 360] : 0, // rotate triangles for cool effect
-      }}
-      transition={{
-        duration: 8 + Math.random() * 12,
-        repeat: Infinity,
-        delay,
-      }}
-    />
-  );
-};
+import coderIcon from "./assets/Coder_Icon.webp";
 
 const HeroSection = () => {
   return (
     <section
       id="resume"
-      className="relative w-[158vw] sm:w-full mt-10 min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white overflow-hidden"
+      className="relative min-h-screen w-full bg-[#050505] text-[#f3f0e8] overflow-hidden"
     >
-      {/* Floating Particles Background */}
-      {[...Array(25)].map((_, i) => (
-        <Particle key={i} delay={i * 0.8} />
-      ))}
+      <div className="relative z-10 min-h-screen w-full grid grid-cols-1 lg:grid-cols-2">
 
-      {/* Main Content */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
-        className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-6 py-16"
-      >
-        {/* Left Side */}
-        <motion.div
-          className="text-center md:text-left space-y-6 w-full md:w-1/2"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
+        {/* ================= LEFT ================= */}
+
+        <div
+          className="
+            relative
+            min-h-[650px]
+            lg:min-h-screen
+            flex
+            flex-col
+            justify-between
+            px-7
+            sm:px-10
+            lg:px-16
+            xl:px-24
+            py-8
+            sm:py-10
+            lg:py-12
+          "
         >
-          <h1 className="text-4xl md:text-6xl font-light leading-snug">
-            I am <span className="text-yellow-300 font-semibold">Mahendra</span>
-          </h1>
-          <h2 className="text-lg md:text-2xl font-semibold text-yellow-400">
-            A Full Stack Developer & Problem Solver
-          </h2>
 
-          <p className="text-base md:text-lg text-gray-300">
-            <Typewriter
-              words={[
-                "Welcome to my personal blog!",
-                "Let's build something amazing together!",
-                "Feel free to explore my work.",
-              ]}
-              loop={Infinity}
-              cursor
-              cursorStyle="_"
-              typeSpeed={80}
-              deleteSpeed={50}
-              delaySpeed={2000}
-            />
-          </p>
+          {/* CONTENT */}
 
-          <motion.a
-            href="/Jammula_Mahendra_Babu_Resume.pdf"
-            target="_blank"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block mt-8 px-8 py-3 bg-yellow-500 text-black font-bold rounded-2xl shadow-xl hover:bg-yellow-400 transition duration-300"
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.9,
+              ease: "easeOut",
+            }}
+            className="max-w-xl my-auto"
           >
-            View Resume
-          </motion.a>
-        </motion.div>
 
-        {/* Right Side */}
-        <motion.div
-          className="w-full md:w-auto flex justify-center mt-10 md:mt-0"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.2 }}
+            {/* INTRO */}
+
+            <p
+              className="
+                mb-4
+                text-[15px]
+                uppercase
+                tracking-[0.35em]
+                text-[#77736b]
+              "
+            >
+              Hello, I'm
+            </p>
+
+            {/* NAME */}
+
+            <h1
+              className="
+                font-serif
+                text-[4.5rem]
+                sm:text-[5.5rem]
+                md:text-[6rem]
+                lg:text-[6.2rem]
+                xl:text-[6.5rem]
+                leading-[0.82]
+                tracking-[-0.055em]
+                font-semibold
+                text-[#d2b55b]
+              "
+            >
+              Mahendra.
+            </h1>
+
+            {/* ROLE */}
+
+            <h2
+              className="
+                mt-8
+                text-xl
+                sm:text-2xl
+                font-light
+                tracking-[-0.02em]
+                text-[#e6e2d9]
+              "
+            >
+              Full Stack Developer
+            </h2>
+
+            <p
+              className="
+                mt-2
+                text-xs
+                sm:text-sm
+                tracking-[0.04em]
+                text-[#77736b]
+              "
+            >
+              Fresher · React · Node.js · Python · AI
+            </p>
+
+            {/* LOCATION */}
+
+            <div
+              className="
+                flex
+                items-center
+                gap-2
+                mt-7
+                text-[9px]
+                uppercase
+                tracking-[0.25em]
+                text-[#66635d]
+              "
+            >
+              <FiMapPin
+                size={11}
+                className="text-[#a88f4c]"
+              />
+
+              Hyderabad, India
+            </div>
+
+            {/* ACTIONS */}
+
+            <div className="flex items-center gap-9 mt-9">
+
+              {/* RESUME */}
+
+              <motion.a
+                href="/Jammula_Mahendra_Babu_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ x: 5 }}
+                className="
+                  group
+                  flex
+                  items-center
+                  gap-2.5
+                  text-[15px]
+                  uppercase
+                  tracking-[0.22em]
+                  text-[#d2b55b]
+                  hover:text-[#ead27b]
+                  transition-colors
+                  duration-300
+                "
+              >
+                <span
+                  className="
+                    border-b
+                    border-[#d2b55b]/40
+                    pb-1.5
+                    group-hover:border-[#d2b55b]
+                    transition-colors
+                  "
+                >
+                  View Resume
+                </span>
+
+                <FiArrowUpRight
+                  size={15}
+                  className="
+                    group-hover:translate-x-1
+                    group-hover:-translate-y-1
+                    transition-transform
+                  "
+                />
+              </motion.a>
+
+              {/* PROJECTS */}
+
+              <motion.a
+                href="#projects"
+                whileHover={{ x: 5 }}
+                className="
+                  group
+                  flex
+                  items-center
+                  gap-2.5
+                  text-[15px]
+                  uppercase
+                  tracking-[0.22em]
+                  text-[#8f8b83]
+                  hover:text-[#e6e2d9]
+                  transition-colors
+                  duration-300
+                "
+              >
+                <span
+                  className="
+                    border-b
+                    border-[#77736b]/30
+                    pb-1.5
+                    group-hover:border-[#aaa49a]
+                    transition-colors
+                  "
+                >
+                  View Projects
+                </span>
+
+                <FiArrowUpRight
+                  size={13}
+                  className="
+                    group-hover:translate-x-1
+                    group-hover:-translate-y-1
+                    transition-transform
+                  "
+                />
+              </motion.a>
+
+            </div>
+
+          </motion.div>
+
+          {/* BOTTOM */}
+
+          <div
+            className="
+              flex
+              items-center
+              justify-between
+              pt-8
+            "
+          >
+
+           
+            <span
+              className="
+                hidden
+                sm:block
+                text-[8px]
+                uppercase
+                tracking-[0.3em]
+                text-[#45433f]
+              "
+            >
+              Open to opportunities
+            </span>
+
+          </div>
+
+        </div>
+
+        {/* ================= RIGHT ================= */}
+
+        <div
+          className="
+            relative
+            min-h-[450px]
+            lg:min-h-screen
+            flex
+            items-center
+            justify-center
+            overflow-hidden
+          "
         >
-          <img
-            src={Profile}
-            alt="Profile"
-            className="w-64 h-64 md:w-80 md:h-80 rounded-2xl object-cover shadow-2xl ring-4 ring-yellow-500/30"
-          />
-        </motion.div>
-      </motion.div>
+
+          {/* TOP LABEL */}
+
+          <div
+            className="
+              absolute
+              top-8
+              right-7
+              sm:right-10
+              lg:right-14
+            "
+          >
+            <span
+              className="
+                text-[8px]
+                uppercase
+                tracking-[0.35em]
+                text-[#4d4a45]
+              "
+            >
+              CSE · AI · 2026
+            </span>
+          </div>
+
+          {/* CODER IMAGE */}
+
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: 30,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{
+              duration: 1,
+              ease: "easeOut",
+            }}
+            className="
+              w-[68%]
+              sm:w-[58%]
+              lg:w-[65%]
+              xl:w-[58%]
+              flex
+              items-center
+              justify-center
+            "
+          >
+            <img
+              src={coderIcon}
+              alt="Developer illustration"
+              className="
+                w-full
+                h-auto
+                object-contain
+                grayscale
+                opacity-90
+              "
+            />
+          </motion.div>
+
+        </div>
+
+      </div>
     </section>
   );
 };
