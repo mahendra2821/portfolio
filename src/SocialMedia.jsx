@@ -259,7 +259,7 @@ const SocialMedia = () => {
           <div className="max-w-3xl">
 
             <p className="text-[11px] uppercase tracking-[0.25em] text-gray-500 mb-7">
-              Let's stay in touch
+               Let's stay in touch
             </p>
 
             <h3
@@ -276,7 +276,7 @@ const SocialMedia = () => {
               <br />
               starts with a
               <br />
-              conversation..
+              conversation.
             </h3>
 
             <p className="mt-8 max-w-xl text-sm md:text-base leading-7 text-gray-500">
